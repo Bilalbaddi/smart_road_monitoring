@@ -1,0 +1,213 @@
+# Email Configuration (contains sensitive credentials)
+email_config.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+.idea/
+
+# Video Files (large files that shouldn't be in git)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.webm
+
+# YOLO Model Files (large ML models)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.weights
+yolo*.pt
+best.pt
+last.pt
+
+# Image Files (generated outputs)
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.gif
+congestion_alert_*.jpg
+traffic_alert_*.jpg
+
+# Temporary Files
+*.tmp
+*.temp
+temp_*
+*_temp.*
+
+# Log Files
+*.log
+logs/
+
+# Dataset Files (usually large)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+dataset/
+datasets/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Windows
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# IDE and Editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+
+# Test outputs
+test_*.mp4
+*_test.*
+*_demo.*
+output*.mp4
+enhanced_*.mp4
+grid_*.mp4
+
+# Configuration files with sensitive data
+config_local.py
+*_config_local.py
+secrets.py
+credentials.py
+.env.local
+
+# Documentation build
+docs/_build/
+docs/build/
+
+# Cache directories
+.cache/
+cache/
+__cache__/
