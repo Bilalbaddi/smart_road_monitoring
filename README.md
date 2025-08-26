@@ -1,10 +1,34 @@
-# Traffic Flow Analyzer
+# Smart Traffic Flow Analyzer 🚗📊
 
-The **Traffic Flow Analyzer** is a deep learning-powered tool designed for real-time monitoring and analysis of vehicle traffic. Leveraging the **YOLOv11x** object detection model, this project detects vehicles and tracks their movement using the **BoT-SORT** tracker. It estimates pixel-based speed for each detected vehicle using Euclidean distance between successive frames. The tool provides key insights such as the total number of vehicles, the count of each vehicle type/class, and identifies congestion hotspots based on vehicle density and average speed. This makes it an ideal solution for urban planners, transport authorities, and smart city enthusiasts focused on improving traffic management and road safety.
+The **Smart Traffic Flow Analyzer** is an advanced deep learning-powered tool designed for real-time monitoring and analysis of vehicle traffic. Leveraging the **YOLOv11x** object detection model, this project provides comprehensive traffic analysis with intelligent features including dynamic speed calculation, grid-based analysis, heatmap visualization, and automated email alerts.
 
 ---
 
-## Features
+## 🌟 Enhanced Features
+
+### Core Detection & Tracking
+- **Real-time Vehicle Detection**: Uses YOLOv11x for accurate vehicle identification
+- **Dynamic Speed Calculation**: Intelligent speed estimation (10-120 range) based on vehicle position and size
+- **Multi-factor Congestion Analysis**: Advanced congestion detection with configurable thresholds
+
+### Spatial Analysis
+- **Grid-based Analysis**: Configurable grid overlays (4x4, 8x8) for detailed spatial traffic monitoring
+- **Heatmap Visualization**: Real-time visual representation of traffic density and hotspots
+- **Zone-specific Monitoring**: Track traffic patterns in specific areas of the video
+
+### Intelligent Alerts & Notifications
+- **Email Alert System**: Automated notifications supporting Gmail, Outlook, and Yahoo
+- **Congestion Alerts**: Real-time alerts when traffic exceeds configured thresholds
+- **Trend Prediction**: Traffic flow prediction based on historical analysis data
+
+### Advanced Analytics
+- **Vehicle Classification**: Count and track different vehicle types
+- **Speed Distribution**: Analyze speed patterns across different zones
+- **Traffic Flow Metrics**: Comprehensive statistics on vehicle movement and density
+
+---
+
+## Original Core Features
 - Real-time vehicle detection and tracking using **YOLOv11x** and **BoT-SORT**.
 - Pixel-based speed estimation for each detected vehicle using Euclidean distance.
 - Insights on total vehicle count, vehicle counts per class, and congestion hotspots.
@@ -33,6 +57,34 @@ Ensure Python 3.7+ is installed, then run:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## 📧 Email Configuration (New Feature)
+
+### Setup Email Notifications
+```bash
+# Copy the email template
+cp Congestion_detection/email_config_template.py Congestion_detection/email_config.py
+
+# Edit with your email credentials
+# See detailed setup instructions in the template file
+```
+
+### Supported Email Providers
+- **Gmail**: Requires app password (2FA must be enabled)
+- **Outlook/Hotmail**: Uses regular credentials
+- **Yahoo**: Requires app password from security settings
+
+### Quick Email Setup
+1. **Gmail Users**:
+   - Enable 2-factor authentication
+   - Generate app password: https://myaccount.google.com/apppasswords
+   - Use app password in configuration
+
+2. **Other Providers**:
+   - Check the template file for specific SMTP settings
+   - Some providers may require app passwords
 
 ---
 
